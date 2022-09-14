@@ -1,7 +1,7 @@
-import React from 'react';
-import { HorizontalBar } from 'react-chartjs-2';
-import '../css/Skills.min.css';
-import dataSets from './dataSets.json';
+import React from "react";
+import { HorizontalBar } from "react-chartjs-2";
+import "../css/Skills.min.css";
+import dataSets from "./dataSets.json";
 
 class Skills extends React.Component {
   constructor() {
@@ -29,7 +29,7 @@ class Skills extends React.Component {
           {
             gridLines: {
               display: true,
-              color: 'rgba(255,99,132,0.2)',
+              color: "rgba(255,99,132,0.2)",
             },
           },
         ],
@@ -44,7 +44,7 @@ class Skills extends React.Component {
   }
 
   componentDidMount() {
-    console.log('Component mounted successfully');
+    console.log("Component mounted successfully");
     this.grabJsonData();
   }
 
@@ -61,14 +61,14 @@ class Skills extends React.Component {
                     label: skill.label,
                     data: skill.data,
                     backgroundColor: [
-                      '#3cffe7',
-                      '#ff8c69',
-                      '#3cffe7',
-                      '#ff8c69',
-                      '#3cffe7',
-                      '#ff8c69',
+                      "#3cffe7",
+                      "#ff8c69",
+                      "#3cffe7",
+                      "#ff8c69",
+                      "#3cffe7",
+                      "#ff8c69",
                     ],
-                    borderColor: 'rgb(255, 99, 132)',
+                    borderColor: "rgb(255, 99, 132)",
                     borderWidth: 0,
                     barThickness: 20,
                   },
