@@ -7,20 +7,16 @@ import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import MailForm from "./MailForm/MailForm";
 
-class App extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Nav />
-        <Name />
-        <Title />
-        <About />
-        <Skills />
-        <Projects />
-        <MailForm />
-      </React.Fragment>
-    );
-  }
+export default function App() {
+  return (
+    <>
+      <Nav />
+      <Name />
+      <Title />
+      <About />
+      <Skills />
+      <Projects />
+      <MailForm />
+    </>
+  );
 }
-
-export default App;
