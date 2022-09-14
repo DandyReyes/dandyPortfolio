@@ -1,35 +1,7 @@
-import React from 'react';
-import '../css/About.min.css';
-import { TimelineMax } from 'gsap';
-import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-import '../../plugins/debug.addIndicators';
+import React from "react";
+import "../css/About.min.css";
 
 class About extends React.Component {
-  componentDidMount() {
-    //! START ANIMATION
-    const tl = new TimelineMax({ onUpdate: updatePercentage });
-    const controller = new ScrollMagic.Controller();
-
-    tl.from('.background-text', 2, { x: 500 });
-
-    //? Scroll Magic START
-    const scene = new ScrollMagic.Scene({
-      triggerElement: '.about-container',
-      triggerHook: 'onLeave',
-      duration: '50%',
-    })
-      .setTween(tl)
-      .addIndicators({ indent: 20 })
-      .setPin('.about-container')
-      .addTo(controller);
-    //? Scroll Magic END
-
-    function updatePercentage() {
-      tl.progress();
-    }
-  }
-
   render() {
     return (
       <div className="about-container">

@@ -3,24 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.27.2",
     "chart.js": "^2.9.3",
     "cors": "^2.8.5",
-    "eslint": "5.12.0",
+    "eslint": "^8.23.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
     "gsap": "^3.2.4",
     "npm": "^8.19.1",
-    "react": "^16.9.0",
+    "react": "^18.2.0",
     "react-chartjs-2": "^2.9.0",
-    "react-dom": "^16.9.0",
+    "react-dom": "^18.2.0",
     "react-ga": "^2.7.0",
     "react-modal": "^3.11.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^2.1.3",
-    "scripts": "^0.1.0",
-    "scrollmagic": "git+https://github.com/DandyReyes/ScrollMagic.git"
+    "react-scripts": "^5.0.1",
+    "scripts": "^0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -57,7 +55,6 @@
   },
   "homepage": ".",
   "devDependencies": {
-    "node-sass": "^7.0.3",
-    "sass": "^1.26.3"
+    "eslint-config-react-app": "^7.0.1"
   }
 }
