@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/MailForm.min.css";
+import "../scss/MailForm.scss";
 
 export default function MailForm() {
   const [name, setName] = React.useState("");
@@ -13,7 +13,7 @@ export default function MailForm() {
 
   return (
     <React.Fragment>
-      <form id="myData" onSubmit={handleOnSubmit} autoComplete="off">
+      <form id="contact" onSubmit={handleOnSubmit} autoComplete="off">
         <h2 id="ending-title">
           Let's <b id="ending-title-outline">BUILD</b> Something!
         </h2>

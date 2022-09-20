@@ -1,6 +1,6 @@
 import React from "react";
 import { HorizontalBar } from "react-chartjs-2";
-import "../css/Skills.min.css";
+import "../scss/Skills.scss";
 import dataSets from "./dataSets.json";
 
 interface chartData {

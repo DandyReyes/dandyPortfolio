@@ -1,10 +1,6 @@
 import React from "react";
-import "../css/Name.min.css";
+import "../scss/Name.scss";
 
-class Name extends React.Component {
-  render() {
-    return <h1 id="myHome">Dandy</h1>;
-  }
+export default function Name() {
+  return <h1 id="myHome">Dandy</h1>;
 }
-
-export default Name;
