@@ -1,7 +1,25 @@
 import React from "react";
-import { HorizontalBar } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
 import "../scss/Skills.scss";
-import dataSets from "./dataSets.json";
+import dataBruh from "./dataSets.json";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 interface chartData {
   id: number;
@@ -13,33 +31,31 @@ interface chartData {
 export default function Skills() {
   const [data, setData] = React.useState<chartData[]>([]);
   const options = {
-    // maintainAspectRatio: false,
+    indexAxis: "y" as const,
     responsive: true,
+    color: "white",
     scales: {
-      xAxes: [
-        {
-          gridLines: {
-            display: false,
-          },
-          ticks: {
-            min: 0,
-            max: 10,
-          },
+      x: {
+        beginAtZero: true,
+        ticks: {
+          color: "white",
         },
-      ],
-      yAxes: [
-        {
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)",
-          },
+      },
+      y: {
+        ticks: {
+          color: "white",
         },
-      ],
+      },
+    },
+    plugins: {
+      legend: {
+        position: "top" as const,
+      },
     },
   };
 
   const grabJsonData = () => {
-    setData(dataSets);
+    setData(dataBruh.datasets);
   };
 
   React.useEffect(() => {
@@ -51,7 +67,7 @@ export default function Skills() {
     <div className="container">
       {data.map((skill) => (
         <div className="charts-container" key={skill.id}>
-          <HorizontalBar
+          <Bar
             data={{
               labels: skill.software,
               datasets: [
