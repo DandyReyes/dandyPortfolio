@@ -1,7 +1,73 @@
-h1 {
-  margin: 0;
-  padding-top: 130px;
-  padding-left: 90px;
-  color: #ff8c69;
-  font-size: 200px;
+#name-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  #myHome {
+    margin: 0;
+    padding-left: 90px;
+    color: #ff8c69;
+    font-size: 7rem;
+    font-weight: 700;
+  }
+
+  #web-border {
+    margin: 0;
+    font-size: 5rem;
+    color: #303036;
+    text-shadow: -1px 0 #3cffe7, 0 1px #3cffe7, 1px 0 #3cffe7, 0 -1px #3cffe7;
+  }
+
+  .landing-page-blue-text {
+    margin: 0;
+    font-size: 5rem;
+    color: #3cffe7;
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 920px) {
+  #name-container {
+    #myHome {
+      font-size: 5rem;
+    }
+    #web-border {
+      font-size: 3rem;
+    }
+    .landing-page-blue-text {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #name-container {
+    #myHome {
+      font-size: 4rem;
+      padding-left: 0;
+    }
+    #web-border {
+      font-size: 3rem;
+    }
+    .landing-page-blue-text {
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  #name-container {
+    #myHome {
+      font-size: 3rem;
+      padding-left: 0;
+    }
+    #web-border {
+      font-size: 2rem;
+    }
+    .landing-page-blue-text {
+      font-size: 2rem;
+    }
+  }
 }
