@@ -7,15 +7,17 @@
 }
 
 .my-portfolio-image-wrapper {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
+  // display: inline-block;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 50%;
   border: solid 2px #757575;
-  margin: 50px;
-  margin-left: 150px;
-  margin-bottom: 145px;
+}
+
+#image-col {
+  display: flex;
+  justify-content: right;
 }
 
 .my-portfolio-image {
@@ -30,18 +32,6 @@
   line-height: 1.8;
 }
 
-.background-text {
-  position: absolute;
-  top: 70;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  padding-bottom: 100px;
-  color: #525252;
-  font-size: 300px;
-}
-
 p {
   i {
     color: #ff8c69;
@@ -49,5 +39,97 @@ p {
 
   b {
     color: #3cffe7;
+  }
+}
+
+@media (max-width: 720px) {
+  .about-container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .my-portfolio-image-wrapper {
+    // display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 2px #757575;
+  }
+
+  #image-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-portfolio-image {
+    width: 100%;
+  }
+
+  .about-me-wrapper {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    line-height: 1.8;
+  }
+
+  p {
+    i {
+      color: #ff8c69;
+    }
+
+    b {
+      color: #3cffe7;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about-container {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .my-portfolio-image-wrapper {
+    // display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 2px #757575;
+  }
+
+  #image-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-portfolio-image {
+    width: 100%;
+  }
+
+  .about-me-wrapper {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    line-height: 1.8;
+  }
+
+  p {
+    i {
+      color: #ff8c69;
+    }
+
+    b {
+      color: #3cffe7;
+    }
   }
 }
