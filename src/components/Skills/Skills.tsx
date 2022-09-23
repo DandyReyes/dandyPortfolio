@@ -31,6 +31,14 @@ interface chartData {
 
 export default function Skills() {
   const [data, setData] = React.useState<chartData[]>([]);
+  const backgroundColor = [
+    "#3cffe7",
+    "#ff8c69",
+    "#3cffe7",
+    "#ff8c69",
+    "#3cffe7",
+    "#ff8c69",
+  ];
   const options = {
     indexAxis: "y" as const,
     responsive: true,
@@ -65,7 +73,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <Container fluid className="container">
+    <Container id="container" fluid className="container">
       {data.map((skill) => (
         <Col className="charts-container" key={skill.id}>
           <Bar
@@ -75,15 +83,7 @@ export default function Skills() {
                 {
                   label: skill.label,
                   data: skill.data,
-                  backgroundColor: [
-                    "#3cffe7",
-                    "#ff8c69",
-                    "#3cffe7",
-                    "#ff8c69",
-                    "#3cffe7",
-                    "#ff8c69",
-                  ],
-                  borderColor: "rgb(255, 99, 132)",
+                  backgroundColor: backgroundColor,
                   borderWidth: 0,
                   barThickness: 20,
                 },

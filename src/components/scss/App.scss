@@ -1,14 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
+$darkGray: #333333;
+$midGray: #525252;
+$lightGray: #eaeaea;
+$lightOrange: #ff8c69;
+$lightBlue: #3cffe7;
 
 :root {
-  --portfolio-dark-gray: #303036;
-  --portfolio-light-gray: #757575;
-  --portfolio-orange: #ff8c69;
-  --portfolio-blue: #3cffe7;
+  --portfolio-dark-gray: #{$darkGray};
+  --portfolio-mid-gray: #{$midGray};
+  --portfolio-light-gray: #{$lightGray};
+  --portfolio-orange: #{$lightOrange};
+  --portfolio-blue: #{$lightBlue};
 }
 
 body {
   margin: 0;
-  background-color: #303036;
+  background-color: $darkGray;
   font-family: sans-serif;
 }
