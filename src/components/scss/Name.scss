@@ -8,7 +8,7 @@
   #myHome {
     margin: 0;
     padding-left: 90px;
-    color: #ff8c69;
+    color: var(--portfolio-orange);
     font-size: 7rem;
     font-weight: 700;
   }
@@ -17,13 +17,13 @@
     margin: 0;
     font-size: 5rem;
     color: #303036;
-    text-shadow: -1px 0 #3cffe7, 0 1px #3cffe7, 1px 0 #3cffe7, 0 -1px #3cffe7;
+    text-shadow: -1px 0 var(--portfolio-blue), 0 1px var(--portfolio-blue), 1px 0 var(--portfolio-blue), 0 -1px var(--portfolio-blue);
   }
 
   .landing-page-blue-text {
     margin: 0;
     font-size: 5rem;
-    color: #3cffe7;
+    color: var(--portfolio-blue);
     text-align: right;
     white-space: nowrap;
   }
