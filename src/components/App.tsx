@@ -4,7 +4,7 @@ import Name from "./Name/Name";
 import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
-import MailForm from "./MailForm/MailForm";
+import Calendly from "./Calendar/Calendly";
 import "./scss/App.scss";
 import { ThemeProvider } from "react-bootstrap";
 
@@ -19,7 +19,7 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
-      <MailForm />
+      <Calendly />
     </ThemeProvider>
   );
 }

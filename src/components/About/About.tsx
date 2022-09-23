@@ -4,7 +4,11 @@ import "../scss/About.scss";
 
 export default function About() {
   return (
-    <Container fluid className="about-container" id="about">
+    <Container
+      fluid
+      className="d-flex about-container align-items-center"
+      id="about"
+    >
       <Row>
         <Col sm={4} md={3} id="image-col">
           <div className="my-portfolio-image-wrapper">

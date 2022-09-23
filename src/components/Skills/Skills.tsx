@@ -11,6 +11,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import "../scss/Skills.scss";
 import dataBruh from "./dataSets.json";
+import { Col, Container } from "src/UILibrary";
 
 ChartJS.register(
   CategoryScale,
@@ -64,9 +65,9 @@ export default function Skills() {
   }, []);
 
   return (
-    <div className="container">
+    <Container fluid className="container">
       {data.map((skill) => (
-        <div className="charts-container" key={skill.id}>
+        <Col className="charts-container" key={skill.id}>
           <Bar
             data={{
               labels: skill.software,
@@ -90,8 +91,8 @@ export default function Skills() {
             }}
             options={options}
           />
-        </div>
+        </Col>
       ))}
-    </div>
+    </Container>
   );
 }
