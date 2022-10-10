@@ -9,7 +9,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import "../scss/Skills.scss";
+import styles from "./Skills.module.scss";
 import dataBruh from "./dataSets.json";
 import { Col, Container } from "src/UILibrary";
 
@@ -73,9 +73,9 @@ export default function Skills() {
   }, []);
 
   return (
-    <Container id="container" fluid className="container">
+    <Container fluid className={styles["container"]}>
       {data.map((skill) => (
-        <Col className="charts-container" key={skill.id}>
+        <Col className={styles["charts-container"]} key={skill.id}>
           <Bar
             data={{
               labels: skill.software,

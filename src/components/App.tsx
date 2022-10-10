@@ -5,10 +5,9 @@ import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Calendly from "./Calendar/Calendly";
-import "./scss/App.scss";
 import { ThemeProvider } from "react-bootstrap";
 
-export default function App() {
+export function MyApp() {
   return (
     <ThemeProvider
       breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
