@@ -5,7 +5,7 @@ import {
   regular,
   brands,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
-import "../scss/Nav.scss";
+import styles from "./Nav.module.scss";
 
 export default function NavigationBar() {
   const homeLinks = [
@@ -22,14 +22,14 @@ export default function NavigationBar() {
       <Container fluid>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" id="nav-links">
+          <Nav className="me-auto" id={styles["nav-links"]}>
             {homeLinks.map(({ key, href, text }) => (
               <Nav.Link key={key} href={href}>
                 {text}
               </Nav.Link>
             ))}
           </Nav>
-          <Nav className="ms-auto" id="nav-icons">
+          <Nav className="ms-auto" id={styles["nav-icons"]}>
             <Nav.Link href={"https://www.github.com/dandyreyes"}>
               <FontAwesomeIcon icon={brands("github")} />
             </Nav.Link>

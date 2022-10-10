@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  height: 100%
 }
 
 .charts-container {
@@ -32,8 +33,4 @@
   .charts-container {
     width: 100%;
   }
-}
-
-#container {
-  height: 100%
 }

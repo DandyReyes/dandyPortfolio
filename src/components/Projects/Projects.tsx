@@ -1,8 +1,13 @@
 import React from "react";
-import "../scss/Projects.scss";
+import styles from "./Projects.module.scss";
 
 export default function Projects() {
   return (
-    <img src="/images/Design_Mock_Ups.png" alt="My design work" width="500px" />
+    <img
+      id={styles["mock-image"]}
+      src="/images/Design_Mock_Ups.png"
+      alt="My design work"
+      width="500px"
+    />
   );
 }
