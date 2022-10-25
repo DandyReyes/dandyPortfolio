@@ -1,36 +1,42 @@
+.icons svg {
+  color: black;
+  height: 30px;
+  padding: 16px 25px;
+}
+
+.icons i {
+  color: black;
+  font-size: 32px;
+  height: 30px;
+  padding: 0 25px;
+}
+
+.icons hr {
+  color: white;
+}
+
+.icons svg:hover, .icons i:hover {
+  color: var(--portfolio-orange);
+}
+
 .container {
+  height: 100%;
+}
+
+#yoMomma {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  height: 100%
-}
-
-.charts-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-}
-
-@media (max-width: 1200) {
-  .charts-container {
-    width: 400px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
+  width: 100%;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
   }
-}
-
-@media (max-width: 768px) {
-  .charts-container {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr;
-    justify-items: left;
-  }
-  .charts-container {
-    width: 100%;
+  h3 {
+    margin: 0;
   }
 }
