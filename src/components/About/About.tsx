@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "src/UILibrary";
 import styles from "./About.module.scss";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -11,8 +12,10 @@ export default function About() {
       <Row>
         <Col sm={4} md={3} id={styles["image-col"]}>
           <div className={styles["my-portfolio-image-wrapper"]}>
-            <img
+            <Image
               className={styles["my-portfolio-image"]}
+              width={300}
+              height={300}
               src="/images/reyes_dandy_headshot.png"
               alt="Portrait of myself"
             />

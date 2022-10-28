@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Projects.module.scss";
 
 export default function Projects() {
+  // Future implementation: Timeline of projects
   return (
     <img
       id={styles["mock-image"]}
