@@ -113,6 +113,13 @@ export default function Skills() {
             <h3>{element}</h3>
           </div>
         ))}
+        <h3>Agile Methodologies</h3>
+        <h3>SQL</h3>
+        <h3>Cypress</h3>
+        <h3>AWS S3</h3>
+        <h3>Asana</h3>
+        <h3>Monday.com</h3>
+        <h3>Notion</h3>
       </div>
     );
   };
@@ -121,7 +128,7 @@ export default function Skills() {
     <Container fluid className={styles["container"]}>
       <Col className={styles["icons"]} key="1">
         <Card />
-        {/* Agile, sql, cypress, postman, TDD, aws s3
+        {/* Agile, sql, cypress, TDD, aws s3
         Asana, Monday.com, Notion */}
       </Col>
     </Container>

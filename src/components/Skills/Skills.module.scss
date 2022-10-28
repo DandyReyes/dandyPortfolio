@@ -1,11 +1,11 @@
 .icons svg {
-  color: black;
+  color: white;
   height: 30px;
   padding: 16px 25px;
 }
 
 .icons i {
-  color: black;
+  color: white;
   font-size: 32px;
   height: 30px;
   padding: 0 25px;
@@ -32,11 +32,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    // background-color: white;
     border-radius: 20px;
     height: 100px;
   }
   h3 {
     margin: 0;
+    color: white;
+  }
+  img {
+    color: white;
   }
 }
