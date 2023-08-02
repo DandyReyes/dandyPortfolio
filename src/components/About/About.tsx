@@ -23,14 +23,8 @@ export default function About() {
         </Col>
         <Col sm={8} md={9} className={styles["about-me-wrapper"]}>
           <p id={styles["paragraph"]}>
-            Hola, my name is <i>Dandy</i>. I am a
-            <b> Latino Software Engineer</b> with an emphasis on{" "}
-            <b>React based Front End Development</b>. I love coding, creating
-            and helping people get to the next level in their career path as
-            developers. I advocate for foster youth and love to mentor young
-            developers. Some of my crazy hobbies are building robots from the
-            ground up, biking, gardening, and throwing get togethers. I'm a
-            people person!
+            Hola, my name is <i>Dandy</i>. I am a<b> Software Engineer</b> with
+            an emphasis on <b>React</b>
           </p>
         </Col>
       </Row>
