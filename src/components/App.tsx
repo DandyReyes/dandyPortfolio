@@ -6,12 +6,11 @@ import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Calendly from "./Calendar/Calendly";
 import { ThemeProvider } from "react-bootstrap";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 export function MyApp() {
   React.useEffect(() => {
     ReactGA.initialize("G-6K1Q19BN4Y");
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
   return (
     <ThemeProvider
