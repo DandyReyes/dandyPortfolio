@@ -23,24 +23,45 @@
   height: 100%;
 }
 
-#yoMomma {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1px;
-  width: 100%;
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // background-color: white;
-    border-radius: 20px;
-    height: 100px;
-  }
-  h3 {
-    margin: 0;
-    color: white;
-  }
-  img {
-    color: white;
+.skillTitle {
+  font-size: 50px;
+  color: #3cffe7;
+  text-align: center;
+}
+
+.skillSubTitle {
+  color: #eaeaea;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  text-wrap: nowrap;
+  width: 10%;
+  box-shadow: inset 0 -10px 0 #525252;
+}
+
+.skill {
+  color: #eaeaea;
+  background-color: #525252;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin: 4px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .skill {
+    width: 180px;
+  };
+  .skillSubTitle {
+    width: 20%;
   }
 }

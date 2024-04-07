@@ -1,36 +1,47 @@
 {
-  "labels": ["Front End", "Design", "Back End", "Useful Skills"],
-  "datasets": [
+  "skillsList": [
     {
-      "id": 1,
-      "label": "Front End",
-      "data": [10, 10, 10, 10, 10],
-      "software": ["HTML5", "CSS3", "Javascript", "Typescript", "React"]
-    },
-    {
-      "id": 2,
-      "label": "Design",
-      "data": [9, 9, 8, 10, 10, 10],
-      "software": [
-        "Grahic Design",
-        "UX/UI",
-        "Photoshop",
-        "Illustrator",
-        "Adobe XD",
-        "Sketch"
+      "name": "Frontend",
+      "skills": [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Typescript",
+        "React",
+        "Redux",
+        "Next.js",
+        "Angular",
+        "SASS",
+        "Bootstrap",
+        "jQuery",
+        "VSCode"
       ]
     },
     {
-      "id": 3,
-      "label": "Back End",
-      "data": [10, 9, 8, 7, 7.5],
-      "software": ["Node.js", "Express.js", "SQL", "PostgreSQL", "AWS S3"]
+      "name": "Backend",
+      "skills": ["Node.js", "Express", "Postman", "MySQL", "PostgreSQL"]
     },
     {
-      "id": 4,
-      "label": "Useful Skills",
-      "data": [10, 9, 7, 10],
-      "software": ["Git", "Agile", "Bash", "Linux CLI"]
+      "name": "Testing",
+      "skills": ["Cypress", "Jest", "Jasmine", "Protractor", "Karma"]
+    },
+    {
+      "name": "DevOps",
+      "skills": ["Docker", "Kubernetes", "Jenkins", "Git", "GitHub", "GitLab"]
+    },
+    { "name": "Cloud", "skills": ["AWS", "GCP"] },
+    {
+      "name": "Monitoring And Data Tracking",
+      "skills": ["Google Analytics", "Segment.io", "Datadog"]
+    },
+    { "name": "System Administration", "skills": ["Linux", "Bash"] },
+    {
+      "name": "Project Management Tools",
+      "skills": ["Asana", "Monday.com", "Notion", "Jira", "Confluence"]
+    },
+    {
+      "name": "Design",
+      "skills": ["Sketch", "Adobe XD", "Figma", "Wireframing", "Prototyping"]
     }
   ]
 }
