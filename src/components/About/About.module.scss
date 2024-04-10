@@ -1,3 +1,52 @@
+.title {
+  font-size: 40px;
+  color: var(--portfolio-blue);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  button:first-child {
+    margin-right: 10px;
+  }
+  button:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+  }
+}
+
+@mixin buttons {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  height: 50px;
+  box-shadow: 5px 5px 10px 0px black;
+}
+
+.button {
+  background-color: var(--portfolio-light-gray);
+  color: var(--portfolio-dark-gray);
+  border: none;
+  cursor: pointer;
+  @include buttons;
+}
+
+.downloadButton {
+  border: 2px solid var(--portfolio-light-gray);
+  background-color: var(--portfolio-dark-gray);
+  color: #eaeaea;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: var(--portfolio-light-gray);
+  }
+  @include buttons;
+}
+
 .about-container {
   display: block;
   width: 100vw;
@@ -6,35 +55,35 @@
   overflow: hidden;
 }
 
-.my-portfolio-image-wrapper {
-  height: 300px;
-  overflow: hidden;
-}
-
-#image-col {
-  display: flex;
-  justify-content: right;
-}
-
-.my-portfolio-image {
-  width: 100%;
-}
-
 .about-me-wrapper {
-  display: inline-block;
-  font-size: 25px;
-  color: white;
-  width: 50%;
-  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  & > div {
+    padding-right: 20px;
+  }
+  p {
+    font-size: 25px;
+    color: var(--portfolio-light-gray);
+  }
+}
+
+.imageWrapper {
+  height: 300px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(-17%);
 }
 
 #paragraph {
+  width: 400px;
   i {
-    color: var(--portfolio-orange);
-  }
-
-  b {
     color: var(--portfolio-blue);
+  }
+  
+  b {
+    color: var(--portfolio-orange);
   }
 }
 
@@ -45,32 +94,6 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-  }
-
-  .my-portfolio-image-wrapper {
-    // display: inline-block;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: solid 2px var(--portfolio-mid-gray);
-  }
-
-  #image-col {
-    display: flex;
-    justify-content: center;
-  }
-
-  .my-portfolio-image {
-    width: 100%;
-  }
-
-  .about-me-wrapper {
-    display: inline-block;
-    font-size: 25px;
-    color: white;
-    width: 100%;
-    line-height: 1.8;
   }
 
   #paragraph {
@@ -93,33 +116,16 @@
     overflow: hidden;
   }
 
-  .my-portfolio-image-wrapper {
-    // display: inline-block;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: solid 2px var(--portfolio-mid-gray);
-  }
-
-  #image-col {
-    display: flex;
-    justify-content: center;
-  }
-
-  .my-portfolio-image {
-    width: 100%;
-  }
-
   .about-me-wrapper {
-    display: inline-block;
-    font-size: 25px;
-    color: white;
-    width: 100%;
-    line-height: 1.8;
+    flex-direction: column;
+    & > div {
+      padding-right: 0;
+    }
   }
 
   #paragraph {
+    width: 340px;
+    margin-bottom: 2rem;
     i {
       color: var(--portfolio-orange);
     }
