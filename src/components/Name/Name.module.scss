@@ -1,11 +1,11 @@
-#name-container{
+.name-container{
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  #myHome {
+  .name {
     margin: 0;
     padding-left: 90px;
     color: var(--portfolio-orange);
@@ -30,8 +30,8 @@
 }
 
 @media (max-width: 992px) {
-  #name-container {
-    #myHome {
+  .name-container {
+    .name {
       font-size: 5rem;
     }
     #web-border {
@@ -44,8 +44,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  #name-container {
-    #myHome {
+  .name-container {
+    .name {
       font-size: 4rem;
       padding-left: 0;
     }
@@ -58,8 +58,8 @@
   }
 }
 @media screen and (max-width: 576px) {
-  #name-container {
-    #myHome {
+  .name-container {
+    .name {
       font-size: 3rem;
       padding-left: 0;
     }

@@ -1,0 +1,19 @@
+.contact {
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>div {
+        width: 700px;
+        height: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        height: calc(100vh - 56px);
+        &>div {
+            width: 100%;
+        }
+    }
+}

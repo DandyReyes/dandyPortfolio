@@ -6,8 +6,8 @@ import Col from "react-bootstrap/Col";
 
 export default function Name() {
   return (
-    <Container fluid id={styles["name-container"]}>
-      <Row id={styles["myHome"]}>
+    <Container fluid className={styles["name-container"]} id="myHome">
+      <Row className={styles["name"]}>
         <Col>Dandy Reyes</Col>
       </Row>
       <Row className={styles["title-container"]}>
