@@ -7,12 +7,14 @@ export default function Skills() {
   const RenderSkills = () => {
     return (
       <div>
-        {data.skillsList.map(({ skills, name }) => (
-          <div>
+        {data.skillsList.map(({ skills, name, id }) => (
+          <div key={id}>
             <h3 className={styles["skillSubTitle"]}>{name}</h3>
             <div className={styles["skillsContainer"]}>
-              {skills.map((skillName) => (
-                <div className={styles["skill"]}>{skillName}</div>
+              {skills.map((skillName, index) => (
+                <div className={styles["skill"]} key={`${id}-${index}`}>
+                  {skillName}
+                </div>
               ))}
             </div>
           </div>

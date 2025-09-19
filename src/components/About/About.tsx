@@ -42,7 +42,7 @@ export default function About() {
           </button>
           <a
             className={styles["downloadButton"]}
-            href="files/Dandy_Reyes_Resume_2024.pdf"
+            href="files/Dandy_Reyes_Resume_2025.pdf"
             download
           >
             Download CV <DownloadIcon strokeColor="white" size={16} />

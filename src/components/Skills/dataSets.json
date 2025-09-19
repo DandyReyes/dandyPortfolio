@@ -1,6 +1,7 @@
 {
   "skillsList": [
     {
+      "id": 0,
       "name": "Frontend",
       "skills": [
         "Javascript",
@@ -18,28 +19,42 @@
       ]
     },
     {
+      "id": 1,
       "name": "Backend",
       "skills": ["Node.js", "Express", "Postman", "MySQL", "PostgreSQL"]
     },
     {
+      "id": 2,
       "name": "Testing",
       "skills": ["Cypress", "Jest", "Jasmine", "Protractor", "Karma"]
     },
     {
+      "id": 3,
       "name": "DevOps",
       "skills": ["Docker", "Kubernetes", "Jenkins", "Git", "GitHub", "GitLab"]
     },
-    { "name": "Cloud", "skills": ["AWS", "GCP"] },
     {
+      "id": 4,
+      "name": "Cloud",
+      "skills": ["AWS", "GCP"]
+    },
+    {
+      "id": 5,
       "name": "Monitoring And Data Tracking",
       "skills": ["Google Analytics", "Segment.io", "Datadog"]
     },
-    { "name": "System Administration", "skills": ["Linux", "Bash"] },
     {
+      "id": 6,
+      "name": "System Administration",
+      "skills": ["Linux", "Bash"]
+    },
+    {
+      "id": 7,
       "name": "Project Management Tools",
       "skills": ["Asana", "Monday.com", "Notion", "Jira", "Confluence"]
     },
     {
+      "id": 8,
       "name": "Design",
       "skills": ["Sketch", "Adobe XD", "Figma", "Wireframing", "Prototyping"]
     }
