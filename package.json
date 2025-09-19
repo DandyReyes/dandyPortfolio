@@ -69,5 +69,8 @@
     "eslint-config-react-app": "^7.0.1",
     "sass": "^1.55.0",
     "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
